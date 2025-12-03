@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fitness Club</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        margin:0;
+        font-family:'Poppins', sans-serif;
+        background:#f6f6f6;
+        color:#222;
+    }
+
+    /* HERO BANNER */
+    .hero{
+        background:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438') center/cover no-repeat;
+        height:380px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        color:white;
+        padding:20px;
+    }
+    .hero h1{
+        font-size:48px;
+        font-weight:600;
+        text-shadow:0 3px 8px rgba(0,0,0,0.6);
+    }
+
+    /* NAV */
+    nav{
+        background:#ff6600;
+        padding:14px;
+        text-align:center;
+    }
+    nav a{
+        color:white;
+        margin:0 20px;
+        text-decoration:none;
+        font-weight:600;
+    }
+
+    /* SECTION */
+    .section{
+        padding:40px 20px;
+        max-width:1100px;
+        margin:auto;
+    }
+    h2{
+        color:#ff6600;
+        margin-bottom:18px;
+        font-size:28px;
+    }
+
+    /* CARDS */
+    .card{
+        background:white;
+        padding:20px;
+        border-radius:14px;
+        box-shadow:0 3px 12px rgba(0,0,0,0.1);
+        margin-bottom:20px;
+    }
+
+    /* GRID */
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+        gap:20px;
+    }
+
+    .trainer-img, .plan-img, .blog-img{
+        width:100%;
+        height:160px;
+        border-radius:12px;
+        object-fit:cover;
+        margin-bottom:12px;
+    }
+
+    /* FOOTER */
+    footer{
+        background:#111;
+        color:white;
+        padding:18px;
+        text-align:center;
+        margin-top:30px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Welcome to Fitness Club</h1>
+</div>
+
+<!-- NAV -->
+<nav>
+    <a href="#classes">Classes</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#plans">Plans</a>
+    <a href="#blog">Blog</a>
+</nav>
+
+<!-- CLASSES -->
+<div class="section" id="classes">
+    <h2>Class Schedule</h2>
+
+    <div class="card" style="background:url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74') center/cover no-repeat; height:200px; border-radius:14px;">
+    </div>
+
+    <div class="card">
+        <p><b>Monday:</b> Yoga 6 AM • Cardio 7 AM • Zumba 6 PM</p>
+        <p><b>Wednesday:</b> Strength 6 AM • HIIT 7 AM • Boxing 6 PM</p>
+        <p><b>Friday:</b> Aerobics 6 AM • Cycling 7 AM • Dance Fit 6 PM</p>
+    </div>
+</div>
+
+<!-- TRAINERS -->
+<div class="section" id="trainers">
+    <h2>Our Trainers</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="asha.jpg" class="trainer-img">
+            <h3>Asha</h3>
+            <p>HIIT & Weight Loss Expert</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" class="trainer-img">
+            <h3>Raj</h3>
+            <p>Strength & Conditioning Coach</p>
+        </div>
+
+        <div class="card">
+            <img src="sam.jpg" class="trainer-img">
+            <h3>Sam</h3>
+            <p>Yoga & Flexibility Trainer</p>
+        </div>
+    </div>
+</div>
+
+<!-- MEMBERSHIP PLANS -->
+<div class="section" id="plans">
+    <h2>Membership Plans</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" class="plan-img">
+            <h3>Basic – ₹999/mo</h3>
+            <p>Gym Access + Morning Classes</p>
+        </div>
+
+        <div class="card">
+            <img src="pro.jpg" class="plan-img">
+            <h3>Pro – ₹1999/mo</h3>
+            <p>All Classes + 1 PT Session</p>
+        </div>
+
+        <div class="card">
+            <img src="elite.jpg" class="plan-img">
+            <h3>Elite – ₹3999/mo</h3>
+            <p>PT + Sauna + Unlimited Classes</p>
+        </div>
+    </div>
+</div>
+
+<!-- BLOG -->
+<div class="section" id="blog">
+    <h2>Fitness Tips</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="gym_moti.jpg" class="blog-img">
+            <h3>5 Ways to Stay Motivated</h3>
+            <p>Set goals • Track progress • Rest well • Hydrate • Stay consistent</p>
+        </div>
+
+        <div class="card">
+            <img src="gym_recov.jpg" class="blog-img">
+            <h3>Recovery Matters</h3>
+            <p>Sleep • Stretching • Protein intake • Hydration improve results.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Fitness Club | Train Hard. Stay Fit.
+</footer>
+
+</body>
+</html>
